@@ -6,11 +6,17 @@
 //
 
 import UIKit
+import AVFAudio
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    class var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
-
+    var objPlayer: AVAudioPlayer?
+    var volumeEnabel = true
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,6 +35,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func playAudioFile() {
+        if volumeEnabel {
+        guard let url = Bundle.main.url(forResource: "click_buttons", withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            objPlayer = try AVAudioPlayer(contentsOf: url)
+            
+            guard let aPlayer = objPlayer else { return }
+            aPlayer.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        } else {
+            return
+        }
     }
 
 

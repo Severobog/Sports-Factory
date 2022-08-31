@@ -9,7 +9,13 @@ import UIKit
 
 class UpcommingVC: UIViewController {
 
+    @IBOutlet var sportsSegmentedControll: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func FootballOrHockey(_ sender: UISegmentedControl) {
+        AppDelegate.shared.playAudioFile()
     }
 }

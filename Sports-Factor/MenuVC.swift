@@ -18,6 +18,7 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppDelegate.shared.playAudioFile()
         
         let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture))
         swipeRecognizer.direction = .left
@@ -29,25 +30,27 @@ class MenuVC: UIViewController {
     }
     
     @IBAction func UpcommingAction(_ sender: UIButton) {
-
+        AppDelegate.shared.playAudioFile()
     }
     
     @IBAction func CompleatedAction(_ sender: UIButton) {
-
+        AppDelegate.shared.playAudioFile()
     }
     
     @IBAction func CalendarAction(_ sender: UIButton) {
-
+        AppDelegate.shared.playAudioFile()
     }
     
     @IBAction func NewsAction(_ sender: UIButton) {
-
+        AppDelegate.shared.playAudioFile()
     }
     
     @IBAction func NotesAction(_ sender: UIButton) {
+        AppDelegate.shared.playAudioFile()
     }
     
     @IBAction func SettingsAction(_ sender: UIButton) {
+        AppDelegate.shared.playAudioFile()
     }
     
 }

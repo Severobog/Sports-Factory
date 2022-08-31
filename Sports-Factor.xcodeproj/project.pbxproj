@@ -11,11 +11,16 @@
 		FF90EB8928BF58A2003B872B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8828BF58A2003B872B /* SceneDelegate.swift */; };
 		FF90EB8B28BF58A2003B872B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8A28BF58A2003B872B /* ViewController.swift */; };
 		FF90EB8E28BF58A2003B872B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90EB8C28BF58A2003B872B /* Main.storyboard */; };
-		FF90EB9028BF58A4003B872B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90EB8F28BF58A4003B872B /* Assets.xcassets */; };
+		FF90EB9028BF58A4003B872B /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90EB8F28BF58A4003B872B /* image.xcassets */; };
 		FF90EB9328BF58A4003B872B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90EB9128BF58A4003B872B /* LaunchScreen.storyboard */; };
 		FF90EB9D28BF62C4003B872B /* UpcommingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */; };
 		FF90EBA128BF8D20003B872B /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA028BF8D20003B872B /* MenuVC.swift */; };
 		FF90EBA328BF9EEE003B872B /* CompleatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */; };
+		FF90EBA528BFD4F7003B872B /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA428BFD4F7003B872B /* CalendarVC.swift */; };
+		FF90EBA728BFD536003B872B /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA628BFD536003B872B /* NewsVC.swift */; };
+		FF90EBA928BFD542003B872B /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBA828BFD542003B872B /* NotesVC.swift */; };
+		FF90EBAB28BFD54E003B872B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBAA28BFD54E003B872B /* SettingsVC.swift */; };
+		FF90EBAD28BFF900003B872B /* click_buttons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF90EBAC28BFF900003B872B /* click_buttons.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +29,17 @@
 		FF90EB8828BF58A2003B872B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF90EB8A28BF58A2003B872B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF90EB8D28BF58A2003B872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF90EB8F28BF58A4003B872B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF90EB8F28BF58A4003B872B /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
 		FF90EB9228BF58A4003B872B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF90EB9428BF58A4003B872B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingVC.swift; sourceTree = "<group>"; };
 		FF90EBA028BF8D20003B872B /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleatedVC.swift; sourceTree = "<group>"; };
+		FF90EBA428BFD4F7003B872B /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		FF90EBA628BFD536003B872B /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		FF90EBA828BFD542003B872B /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
+		FF90EBAA28BFD54E003B872B /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		FF90EBAC28BFF900003B872B /* click_buttons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click_buttons.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +75,28 @@
 				FF90EB8628BF58A2003B872B /* AppDelegate.swift */,
 				FF90EB8828BF58A2003B872B /* SceneDelegate.swift */,
 				FF90EB8A28BF58A2003B872B /* ViewController.swift */,
-				FF90EB8C28BF58A2003B872B /* Main.storyboard */,
 				FF90EBA028BF8D20003B872B /* MenuVC.swift */,
 				FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */,
 				FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */,
-				FF90EB8F28BF58A4003B872B /* Assets.xcassets */,
+				FF90EBA428BFD4F7003B872B /* CalendarVC.swift */,
+				FF90EBA628BFD536003B872B /* NewsVC.swift */,
+				FF90EBA828BFD542003B872B /* NotesVC.swift */,
+				FF90EBAA28BFD54E003B872B /* SettingsVC.swift */,
+				FF90EBAE28BFF906003B872B /* Assets */,
+				FF90EB8C28BF58A2003B872B /* Main.storyboard */,
 				FF90EB9128BF58A4003B872B /* LaunchScreen.storyboard */,
 				FF90EB9428BF58A4003B872B /* Info.plist */,
 			);
 			path = "Sports-Factor";
+			sourceTree = "<group>";
+		};
+		FF90EBAE28BFF906003B872B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB8F28BF58A4003B872B /* image.xcassets */,
+				FF90EBAC28BFF900003B872B /* click_buttons.mp3 */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF90EB9328BF58A4003B872B /* LaunchScreen.storyboard in Resources */,
-				FF90EB9028BF58A4003B872B /* Assets.xcassets in Resources */,
+				FF90EBAD28BFF900003B872B /* click_buttons.mp3 in Resources */,
+				FF90EB9028BF58A4003B872B /* image.xcassets in Resources */,
 				FF90EB8E28BF58A2003B872B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,11 +172,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF90EBA328BF9EEE003B872B /* CompleatedVC.swift in Sources */,
+				FF90EBA928BFD542003B872B /* NotesVC.swift in Sources */,
 				FF90EB8B28BF58A2003B872B /* ViewController.swift in Sources */,
 				FF90EB9D28BF62C4003B872B /* UpcommingVC.swift in Sources */,
 				FF90EB8728BF58A2003B872B /* AppDelegate.swift in Sources */,
+				FF90EBA528BFD4F7003B872B /* CalendarVC.swift in Sources */,
+				FF90EBA728BFD536003B872B /* NewsVC.swift in Sources */,
 				FF90EB8928BF58A2003B872B /* SceneDelegate.swift in Sources */,
 				FF90EBA128BF8D20003B872B /* MenuVC.swift in Sources */,
+				FF90EBAB28BFD54E003B872B /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
