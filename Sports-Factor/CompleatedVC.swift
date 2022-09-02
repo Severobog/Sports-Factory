@@ -8,9 +8,6 @@
 import UIKit
 
 class CompleatedVC: UIViewController {
-
-    @IBOutlet var customNavBar: UIView!
-    @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

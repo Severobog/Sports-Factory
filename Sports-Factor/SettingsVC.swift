@@ -26,16 +26,16 @@ class SettingsVC: UIViewController {
         }
         
     }
+    
     @IBAction func screenLightAction(_ sender: UISlider) {
-        
         UIScreen.main.brightness = CGFloat(sender.value)
+        
     }
     @IBAction func volumeControll(_ sender: UISegmentedControl) {
         
-        AppDelegate.shared.playAudioFile()
-        
         if AppDelegate.shared.volumeEnabel {
             AppDelegate.shared.volumeEnabel = false
+            
         } else  {
             AppDelegate.shared.volumeEnabel = true
             AppDelegate.shared.playAudioFile()

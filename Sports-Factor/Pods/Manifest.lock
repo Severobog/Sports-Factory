@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.6.1)
+  - FSCalendar (2.8.4)
+  - IQKeyboardManagerSwift (6.5.10)
+  - RESegmentedControl (0.5.1)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FSCalendar
+  - IQKeyboardManagerSwift
+  - RESegmentedControl
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - IQKeyboardManagerSwift
+    - RESegmentedControl
+    - SDWebImage
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  RESegmentedControl: 96aa84d861d3715128188c66faf1222d41df756e
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: a236a40cdb8ee6b51b218b96bd6fe7faa559068c
+
+COCOAPODS: 1.11.3

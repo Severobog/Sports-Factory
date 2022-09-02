@@ -9,12 +9,13 @@ import UIKit
 import AVFAudio
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     class var shared: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
-
+    
+    var window: UIWindow?
     var objPlayer: AVAudioPlayer?
     var volumeEnabel = true
 
