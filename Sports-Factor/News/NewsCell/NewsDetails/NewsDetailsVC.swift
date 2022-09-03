@@ -14,8 +14,9 @@ class NewsDetailsVC: UIViewController {
     //********************************************
     
     @IBOutlet weak var imgNews: UIImageView!
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var lblNewsTitle: UILabel!
-    @IBOutlet weak var lblNewsDetails: UILabel!
+    @IBOutlet weak var lblNewsDetails: UITextView!
 
     //********************************************
     //MARK: - Propties
@@ -37,19 +38,14 @@ class NewsDetailsVC: UIViewController {
         super.viewDidLoad()
         imgNews.setImage(url: details?.contents[0].consumable?.image_uri ?? "", placeholderImage: UIImage(named: "ic_news_bg"))
         lblNewsTitle.text = details?.contents[0].consumable?.title
-
-        
-
     }
     
-    //********************************************
-    //MARK: - Function
-    //********************************************
+    @IBAction func backToNews(_ sender: UIButton) {
+        AppDelegate.shared.playAudioFile()
+        dismiss(animated: true)
+    }
     
     
-    //********************************************
-    //MARK: - Api Call
-    //********************************************
     
     func apiCall() {
         viewModel.newsDetailsApi(id: details?.contents[0].consumable?.id ?? "") { success in
@@ -58,13 +54,4 @@ class NewsDetailsVC: UIViewController {
             }
         }
     }
-    
-    //********************************************
-    //MARK: - Action
-    //********************************************
-
 }
-
-//********************************************
-//MARK: - Extention
-//********************************************

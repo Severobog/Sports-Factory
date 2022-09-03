@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Body
 class SportsDataModel {
+    
     let tournamentID: Int
     let tournamentName: String
     let gameID: Int
@@ -36,7 +37,6 @@ class SportsDataModel {
         self.opp2_Icon = data["opp_2_icon"] as? Int ?? 0
         
         self.scoreFull = data["score_full"] as? String ?? ""
-//        self.height = height
         
         self.oddsList = OddsList.getArray(arr: data["game_oc_list"] as? [[String: Any]] ?? [[String: Any]]())
         var temp = [OddsData]()

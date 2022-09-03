@@ -29,6 +29,9 @@
 		FF042B4428C1C9BA00D939B7 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */; };
 		FF042B4828C1CA2300D939B7 /* NewsDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */; };
 		FF042B4A28C1CB6A00D939B7 /* SportsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */; };
+		FF8AD07328C2B273005EBEF6 /* FootballCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD06F28C2B273005EBEF6 /* FootballCell.swift */; };
+		FF8AD07628C2B7C1005EBEF6 /* FootballPre.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD07528C2B7C0005EBEF6 /* FootballPre.swift */; };
+		FF8AD07A28C2BA6C005EBEF6 /* HockeyPre.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */; };
 		FF90EB8728BF58A2003B872B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8628BF58A2003B872B /* AppDelegate.swift */; };
 		FF90EB8928BF58A2003B872B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8828BF58A2003B872B /* SceneDelegate.swift */; };
 		FF90EB8B28BF58A2003B872B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EB8A28BF58A2003B872B /* ViewController.swift */; };
@@ -51,6 +54,7 @@
 		FF90EBC028C018B1003B872B /* NewNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBBE28C018B1003B872B /* NewNote+CoreDataProperties.swift */; };
 		FF90EBC228C03DDB003B872B /* AddNewNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBC128C03DDB003B872B /* AddNewNoteVC.swift */; };
 		FF90EBC428C03F58003B872B /* AddNewNoteSubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90EBC328C03F58003B872B /* AddNewNoteSubVC.swift */; };
+		FF9D9F4528C375D000C2AE4A /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9D9F3628C375D000C2AE4A /* Games.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +187,9 @@
 		FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
 		FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailsVM.swift; sourceTree = "<group>"; };
 		FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsDataModel.swift; sourceTree = "<group>"; };
+		FF8AD06F28C2B273005EBEF6 /* FootballCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootballCell.swift; sourceTree = "<group>"; };
+		FF8AD07528C2B7C0005EBEF6 /* FootballPre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FootballPre.swift; sourceTree = "<group>"; };
+		FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HockeyPre.swift; sourceTree = "<group>"; };
 		FF90EB8328BF58A2003B872B /* Sports-Factor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sports-Factor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90EB8628BF58A2003B872B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF90EB8828BF58A2003B872B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +214,7 @@
 		FF90EBBE28C018B1003B872B /* NewNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FF90EBC128C03DDB003B872B /* AddNewNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewNoteVC.swift; sourceTree = "<group>"; };
 		FF90EBC328C03F58003B872B /* AddNewNoteSubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewNoteSubVC.swift; sourceTree = "<group>"; };
+		FF9D9F3628C375D000C2AE4A /* Games.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +268,7 @@
 		FF042ADE28C1C47900D939B7 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				FF042B4028C1C92600D939B7 /* CommomViewModel.swift */,
 				FF042ADF28C1C47900D939B7 /* APIClient.swift */,
 				FF042AE028C1C47900D939B7 /* HeaderRequestParameter.swift */,
 				FF042AE128C1C47900D939B7 /* APIManager.swift */,
@@ -301,9 +310,11 @@
 		FF042B3928C1C86800D939B7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				FF9D9F3628C375D000C2AE4A /* Games.swift */,
+				FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */,
+				FF042ADE28C1C47900D939B7 /* ApiClient */,
 				FF042B3228C1C82000D939B7 /* Extension */,
 				FF042B3528C1C82000D939B7 /* IndicatorManager.swift */,
-				FF042ADE28C1C47900D939B7 /* ApiClient */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -311,6 +322,8 @@
 		FF042B3A28C1C89300D939B7 /* NewsCell */ = {
 			isa = PBXGroup;
 			children = (
+				FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */,
+				FF042ADB28C1C40800D939B7 /* NewsModel.swift */,
 				FF042B3B28C1C89300D939B7 /* NewsCell.swift */,
 				FF042B3C28C1C89300D939B7 /* NewsCell.xib */,
 				FF042B4228C1C9BA00D939B7 /* NewsDetails */,
@@ -322,9 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				FF90EBA628BFD536003B872B /* NewsVC.swift */,
-				FF042B4728C1CA2300D939B7 /* NewsDetailsVM.swift */,
 				FF042B3A28C1C89300D939B7 /* NewsCell */,
-				FF042ADB28C1C40800D939B7 /* NewsModel.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -335,6 +346,25 @@
 				FF042B4328C1C9BA00D939B7 /* NewsDetailsVC.swift */,
 			);
 			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		FF8AD06B28C2B273005EBEF6 /* FootballCell */ = {
+			isa = PBXGroup;
+			children = (
+				FF8AD06F28C2B273005EBEF6 /* FootballCell.swift */,
+			);
+			path = FootballCell;
+			sourceTree = "<group>";
+		};
+		FF8AD07428C2B287005EBEF6 /* Upcomming */ = {
+			isa = PBXGroup;
+			children = (
+				FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */,
+				FF8AD07928C2BA6C005EBEF6 /* HockeyPre.swift */,
+				FF8AD07528C2B7C0005EBEF6 /* FootballPre.swift */,
+				FF8AD06B28C2B273005EBEF6 /* FootballCell */,
+			);
+			path = Upcomming;
 			sourceTree = "<group>";
 		};
 		FF90EB7A28BF58A2003B872B = {
@@ -365,12 +395,10 @@
 				FF90EB8A28BF58A2003B872B /* ViewController.swift */,
 				FF042B3928C1C86800D939B7 /* Helper */,
 				FF90EBA028BF8D20003B872B /* MenuVC.swift */,
-				FF90EB9C28BF62C4003B872B /* UpcommingVC.swift */,
-				FF042B4028C1C92600D939B7 /* CommomViewModel.swift */,
-				FF042B4928C1CB6A00D939B7 /* SportsDataModel.swift */,
 				FF90EBA228BF9EEE003B872B /* CompleatedVC.swift */,
 				FF90EBA428BFD4F7003B872B /* CalendarVC.swift */,
 				FF90EBAA28BFD54E003B872B /* SettingsVC.swift */,
+				FF8AD07428C2B287005EBEF6 /* Upcomming */,
 				FF042B3F28C1C89F00D939B7 /* News */,
 				FF042ADD28C1C42500D939B7 /* Notes */,
 				FF90EBB828C01833003B872B /* Core Data */,
@@ -601,12 +629,15 @@
 				FF042B4428C1C9BA00D939B7 /* NewsDetailsVC.swift in Sources */,
 				FF042B3828C1C82000D939B7 /* IndicatorManager.swift in Sources */,
 				FF90EBC228C03DDB003B872B /* AddNewNoteVC.swift in Sources */,
+				FF9D9F4528C375D000C2AE4A /* Games.swift in Sources */,
+				FF8AD07628C2B7C1005EBEF6 /* FootballPre.swift in Sources */,
 				FF90EBB428C017BF003B872B /* CoreDataManager.swift in Sources */,
 				FF042AE628C1C47900D939B7 /* FileParameterRequest.swift in Sources */,
 				FF90EBA528BFD4F7003B872B /* CalendarVC.swift in Sources */,
 				FF042B4828C1CA2300D939B7 /* NewsDetailsVM.swift in Sources */,
 				FF90EBBF28C018B1003B872B /* NewNote+CoreDataClass.swift in Sources */,
 				FF042B4128C1C92600D939B7 /* CommomViewModel.swift in Sources */,
+				FF8AD07A28C2BA6C005EBEF6 /* HockeyPre.swift in Sources */,
 				FF90EBA728BFD536003B872B /* NewsVC.swift in Sources */,
 				FF042B4A28C1CB6A00D939B7 /* SportsDataModel.swift in Sources */,
 				FF042B3628C1C82000D939B7 /* UIView+Extensions.swift in Sources */,
@@ -617,6 +648,7 @@
 				FF042AF528C1C5BC00D939B7 /* ResponseData.swift in Sources */,
 				FF90EBAB28BFD54E003B872B /* SettingsVC.swift in Sources */,
 				FF042AF428C1C5BC00D939B7 /* Global Constants.swift in Sources */,
+				FF8AD07328C2B273005EBEF6 /* FootballCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,7 +803,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -800,7 +832,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

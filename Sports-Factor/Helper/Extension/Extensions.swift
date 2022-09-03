@@ -24,7 +24,7 @@ import Alamofire
 // *************************************************************************
 //Naboleia
 
-let AppName = "Woman Sports Data"
+let AppName = "Sports Factor"
 let userDefault = UserDefaults.standard
 
 let appdelegate = UIApplication.shared.delegate as! AppDelegate
@@ -187,47 +187,6 @@ extension PHAsset {
 }
 
 
-// MARK:-
-// MARK:-   UIStoryboard
-
-//extension UIStoryboard {
-//
-//    convenience init(_ name:String = "Main") {
-//        self.init(name: name, bundle: Bundle.main)
-//    }
-//
-//    class func instantiateVC<T>(_ vc: T.Type, _ name: String = "Main") -> T {
-//        guard let vctype = UIStoryboard(name).instantiateViewController(withIdentifier: String(describing: vc)) as? T else {
-//            fatalError(String(describing: vc) + " identifier not found")
-//        }
-//        return vctype
-//    }
-//}
-
-//extension Array {
-//    /// Returns an array containing this sequence shuffled
-//    var shuffled: Array {
-//        var elements = self
-//        return elements.shuffle()
-//    }
-//    /// Shuffles this sequence in place
-//    @discardableResult
-//    mutating func shuffle() -> Array {
-//        let count = self.count
-//        indices.lazy.dropLast().forEach {
-//            swapAt($0, Int(arc4random_uniform(UInt32(count - $0))) + $0)
-//        }
-//        return self
-//    }
-//    var chooseOne: Element { return self[Int(arc4random_uniform(UInt32(count)))] }
-//    func choose(_ n: Int) -> Array { return Array(shuffled.prefix(n)) }
-//}
-
-
-// ***************************************************************
-// MARK:-
-// MARK:-  Sequence
-// ***************************************************************
 extension Sequence where Iterator.Element == UIView {
     
     func setRound() {
@@ -290,14 +249,7 @@ extension Sequence where Iterator.Element == UITextField {
 }
 
 
-// MARK:-
-// MARK:-   UIWindow
 extension UIWindow {
-    
-//    func setRoot<T: UIViewController>(_ vc: T.Type, storyboard: String = "Main") -> Self {
-//        self.rootViewController = UIStoryboard.instantiateVC(vc, storyboard)
-//        return self
-//    }
     
     func setRootVC(_ vc: UIViewController) -> UIWindow {
         self.rootViewController = vc

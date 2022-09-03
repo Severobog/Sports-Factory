@@ -30,15 +30,6 @@ class NewsVC: UIViewController {
         
     }
     
-    //********************************************
-    //MARK: - Function
-    //********************************************
-    
-    
-    //********************************************
-    //MARK: - Api Call
-    //********************************************
-    
     func newsDataApi() {
         viewModel.newsDataApi { [self] success in
             if !success {
@@ -77,9 +68,11 @@ extension NewsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        AppDelegate.shared.playAudioFile()
         let vc = storyboard?.instantiateViewController(withIdentifier: "NewsDetailsVC") as! NewsDetailsVC
         vc.details = filterArr[indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
     }
     
     

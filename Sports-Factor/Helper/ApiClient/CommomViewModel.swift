@@ -19,9 +19,9 @@ class CommonViewModel {
     func gameDataApi(GameName: String, completion: @escaping (_ success: Bool) -> Void) {
         
         if GameName == "Football" {
-            url = "https://betapilive.com/v1/events/1/0/list/100000000/live/en"
+            url = "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=soccer&day=today"
         } else if GameName == "Hockey" {
-            url = "https://betapilive.com/v1/events/2/0/list/100000000/live/en"
+            url = "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today"
         }
         
         
@@ -50,15 +50,9 @@ class CommonViewModel {
         
         
         if GameName == "Football" {
-            url = "https://betapilive.com/v1/events/1/0/list/1000000/line/en"
-        } else if GameName == "Basketball" {
-            url = "https://betapilive.com/v1/events/3/0/list/1000000/line/en"
-        } else if GameName == "Cricket" {
-            url = "https://betapilive.com/v1/events/66/0/list/1000000/line/en"
-        } else if GameName == "Tennis" {
-            url = "https://betapilive.com/v1/events/4/0/list/1000000/line/en"
+            url = "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=soccer&day=today"
         } else if GameName == "Hockey" {
-            url = "https://betapilive.com/v1/events/2/0/list/1000000/line/en"
+            url = "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today"
         }
         
         
