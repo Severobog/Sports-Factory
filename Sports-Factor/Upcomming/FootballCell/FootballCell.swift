@@ -17,4 +17,5 @@ class MatchesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var team1Lbl: UILabel!
     @IBOutlet weak var team2Lbl: UILabel!
     
+    @IBOutlet weak var scoreLbl: UILabel!
 }

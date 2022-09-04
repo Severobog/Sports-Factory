@@ -1,17 +1,16 @@
 //
-//  HockeyPre.swift
-//  SportsLibrary
+//  HockeyEnd.swift
+//  Sports-Factor
 //
-//  Created by Usman Qamar on 8/28/22.
+//  Created by Демид Стариков on 04.09.2022.
 //
 
 import Foundation
 
-
-struct HockeyPre: Codable {
+struct HockeyEnd: Codable {
     let timeRequest: Double
     let capacityRequests, remainRequests, lastTimeYourKey, dateGames: String
-    let gamesPre: [HockeyGamesPre]
+    let gamesEnd: [HockeyGamesEnd]
 
     enum CodingKeys: String, CodingKey {
         case timeRequest = "time_request"
@@ -19,25 +18,26 @@ struct HockeyPre: Codable {
         case remainRequests = "remain_requests"
         case lastTimeYourKey = "last_time_your_key"
         case dateGames = "date_games"
-        case gamesPre = "games_pre"
+        case gamesEnd = "games_end"
     }
 }
 
-// MARK: - GamesPre
-struct HockeyGamesPre: Codable {
+// MARK: - GamesEnd
+struct HockeyGamesEnd: Codable {
     let gameID, time, timeStatus: String
-    let league, home, away: AwayHockey
+    let league, home, away: EndHockey
+    let score: String
 
     enum CodingKeys: String, CodingKey {
         case gameID = "game_id"
         case time
         case timeStatus = "time_status"
-        case league, home, away
+        case league, home, away, score
     }
 }
 
 // MARK: - Away
-struct AwayHockey: Codable {
+struct EndHockey: Codable {
     let name, id: String
     let imageID: String?
     let cc: String

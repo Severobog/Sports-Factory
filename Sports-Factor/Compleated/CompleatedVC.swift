@@ -1,5 +1,5 @@
 //
-//  UpcommingVC.swift
+//  CompleatedVC.swift
 //  Sports-Factor
 //
 //  Created by Демид Стариков on 31.08.2022.
@@ -7,15 +7,21 @@
 
 import UIKit
 
-class UpcommingVC: UIViewController {
-
-    @IBOutlet var gameCol: UICollectionView!
-    @IBOutlet var sportsSegmentedControll: UISegmentedControl!
+class CompleatedVC: UIViewController {
     
-
-    var allGames : [GamesPre] = []
-    var allHockeyGames : [HockeyGamesPre] = []
+    @IBOutlet var gameCol: UICollectionView!
+    @IBOutlet var sportSegmentedControl: UISegmentedControl!
+    
     var isFootball = true
+    
+    @IBAction func segmContAction(_ sender: UISegmentedControl) {
+        AppDelegate.shared.playAudioFile()
+        isFootball.toggle()
+        gameCol.reloadData()
+    }
+
+    var allGames : [GamesEnd] = []
+    var allHockeyGames : [HockeyGamesEnd] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +31,7 @@ class UpcommingVC: UIViewController {
         gameCol.delegate = self
         gameCol.dataSource = self
         
-        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=soccer&day=today&p=1")
+        let url = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=enddata&sport=soccer&day=20220903")
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         
@@ -33,8 +39,8 @@ class UpcommingVC: UIViewController {
             
             do {
                 let jsonDecoder = JSONDecoder()
-                let responseModel = try jsonDecoder.decode(UpcomingGames.self, from: data!)
-                let games = responseModel.gamesPre
+                let responseModel = try jsonDecoder.decode(CompleatedGames.self, from: data!)
+                let games = responseModel.gamesEnd
                 
                 for game in games {
                     self.allGames.append(game)
@@ -49,7 +55,7 @@ class UpcommingVC: UIViewController {
             }
         }).resume()
         
-        let urlNew = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=predata&sport=icehockey&day=today&p=1")
+        let urlNew = URL(string: "https://spoyer.com/api/get.php?login=ayna&token=12784-OhJLY5mb3BSOx0O&task=enddata&sport=icehockey&day=20220903")
         var requestNew = URLRequest(url: urlNew!)
         requestNew.httpMethod = "GET"
 
@@ -57,9 +63,9 @@ class UpcommingVC: UIViewController {
             
             do {
                 let jsonDecoder = JSONDecoder()
-                let responseModel = try jsonDecoder.decode(HockeyPre.self, from: data!)
+                let responseModel = try jsonDecoder.decode(HockeyEnd.self, from: data!)
                 
-                self.allHockeyGames = responseModel.gamesPre
+                self.allHockeyGames = responseModel.gamesEnd
                 
                 DispatchQueue.main.async {
                     self.gameCol.reloadData()
@@ -68,13 +74,6 @@ class UpcommingVC: UIViewController {
                 print("JSON Serialization error")
             }
         }).resume()
-    }
-    
-    @IBAction func FootballOrHockey(_ sender: UISegmentedControl) {
-        AppDelegate.shared.playAudioFile()
-        isFootball.toggle()
-        gameCol.reloadData()
-        print(isFootball)
     }
     
     func convertDateToStringGame(date: Date) -> String {
@@ -86,7 +85,7 @@ class UpcommingVC: UIViewController {
     }
 }
 
-extension UpcommingVC : UICollectionViewDelegateFlowLayout{
+extension CompleatedVC : UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let yourWidth = collectionView.bounds.width
@@ -105,7 +104,7 @@ extension UpcommingVC : UICollectionViewDelegateFlowLayout{
     }
 }
     
-extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
+extension CompleatedVC : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if isFootball {
@@ -131,6 +130,7 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
             cell.gameDataLbl.text = components[0]
             cell.homeTeamFlag.image = UIImage(named: "soccerImg")
             cell.awayTeamFlag.image = UIImage(named: "soccerImg")
+            cell.scoreLbl.text = "\(self.allGames[indexPath.row].score)"
             
             return cell
         }
@@ -148,6 +148,7 @@ extension UpcommingVC : UICollectionViewDataSource,UICollectionViewDelegate{
             cell.gameDataLbl.text = components[0]
             cell.homeTeamFlag.image = UIImage(named: "hockeyImg")
             cell.awayTeamFlag.image = UIImage(named: "hockeyImg")
+            cell.scoreLbl.text = "\(self.allHockeyGames[indexPath.row].score)"
             
             return cell
         }
