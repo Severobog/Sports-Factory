@@ -29,8 +29,8 @@ struct HockeyGamesPre: Codable {
 
     enum CodingKeys: String, CodingKey {
         case gameID = "game_id"
-        case time
         case timeStatus = "time_status"
+        case time
         case league, home, away
     }
 }
